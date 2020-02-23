@@ -33,14 +33,14 @@ gsad:
     GVMD_HOST: 'gvmd'
     GVMD_PORT: '9390'
 
-# cert-scap-sync:
-#   image: admirito/gvmd:11
-#   command: sh -c "greenbone-certdata-sync; sleep 3; greenbone-scapdata-sync"
-#   volumes_from:
-#     - gvmd
+cert-scap-sync:
+   image: admirito/gvmd:11
+   command: sh -c "greenbone-certdata-sync; sleep 3; greenbone-scapdata-sync"
+   volumes_from:
+     - gvmd
 
-# nvt-sync:
-#   image: admirito/openvas:11
-#   command: greenbone-nvt-sync
-#   volumes_from:
-#     - openvas
+nvt-sync:
+   image: admirito/openvas:11
+   command: greenbone-nvt-sync
+   volumes_from:
+     - openvas
