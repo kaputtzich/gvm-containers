@@ -16,7 +16,7 @@ RUN set -ex; \
     rm -rf ./openvas_*.deb; \
     rm -rf /var/lib/apt/lists/*
 
-ENV GVMD_POSTGRESQL_URI="postgresql://gvmduser:password@postgres:5432/gvmd?application_name=gvmd" \
+ENV GVMD_POSTGRESQL_URI="postgresql://gvmduser:gvmdpass@postgres:5432/gvmd?application_name=gvmd" \
     GVMD_USER=admin
 
 VOLUME /var/lib/gvm/
