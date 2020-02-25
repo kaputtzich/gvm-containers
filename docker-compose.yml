@@ -11,7 +11,7 @@ gvm-postgres:
   image: admirito/gvm-postgres:11
   environment:
     POSTGRES_USER: 'gvmduser'
-    POSTGRES_PASSWORD: 'mypassword'
+    POSTGRES_PASSWORD: 'gvmdpass'
     POSTGRES_DB: 'gvmd'
 
 openvas:
